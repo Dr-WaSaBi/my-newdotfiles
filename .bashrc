@@ -117,7 +117,11 @@ if ! shopt -oq posix; then
 fi
 
 # set my editor to neovim
-export EDITOR="neovim"
+export EDITOR="nvim"
+
+# Set a few alias to my editor of choice
+alias vi=$EDITOR
+alias vim=$EDDITOR
 
 # Adding my own bin to path
 export PATH="$PATH:$HOME/.local/bin"
