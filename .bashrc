@@ -126,7 +126,8 @@ eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp
 
 figlet -f slant "Welcome"|lolcat
 cowsay "Now get lost"|lolcat
-echo "----------------------------"|lolcat
+echo "----------------------------------------"|lolcat
 echo ""
-# change to ~
+
+# change to ~ home folder
 cd ~
