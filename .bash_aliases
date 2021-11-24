@@ -8,9 +8,10 @@
 #
 # *****************************************************************
 
-alias ls=lsd
+alias ls=lsd   # alias ls delux to be standard gnu ls
 
 alias gs='git status'
+alias ga='git add .'
 alias gc='git commit'
 alias gp='git push'
 alias sob='source .bashrc'
