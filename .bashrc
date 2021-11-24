@@ -121,7 +121,7 @@ export EDITOR="nvim"
 
 # Set a few alias to my editor of choice
 alias vi=$EDITOR
-alias vim=$EDDITOR
+alias vim=$EDITOR
 
 # Adding my own bin to path
 export PATH="$PATH:$HOME/.local/bin"
