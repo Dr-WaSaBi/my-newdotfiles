@@ -36,7 +36,7 @@ alias gp='git push'
 
 alias sob='source ~/.bashrc'
 
-alias bat='batcat'
+alias bat='batcat'  # batcat a fun replacement to cat written in rust
 
 
 
