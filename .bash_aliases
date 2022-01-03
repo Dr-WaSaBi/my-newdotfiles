@@ -45,3 +45,5 @@ alias salst='sudo list --upgradeable'
 alias sagup='sudo apt upgrade'
 alias sagin='sudo apt install'
 
+alias py='python3'
+

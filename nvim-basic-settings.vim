@@ -41,7 +41,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 set termguicolors       " turn on true colors, since ny term supports that
-colorscheme cobalt2     " set the colorscheme
+" colorscheme cobalt2     " set the colorscheme
 
 "set cursorline          " Should kind of highlight what ever line the cursor is on, to make it easy to find
 set colorcolumn=100     " Put a highlighted colume at the 100 space mark.  Just so we can see a really long line, like this one.

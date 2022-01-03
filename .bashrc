@@ -125,9 +125,10 @@ export PATH="$PATH:$HOME/.rvm/bin"
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp.json)"
 
 figlet -f slant "Welcome"|lolcat
-fortune|cowsay|lolcat
+fortune|cowsay -f eyes|lolcat
 echo "----------------------------------------"|lolcat
 echo ""
 
 # change to ~ home folder
 cd ~
+. "$HOME/.cargo/env"
