@@ -41,7 +41,7 @@ alias bat='batcat'  # batcat a fun replacement to cat written in rust
 # Some sudos
 
 alias sagud='sudo apt update'
-alias salst='sudo list --upgradeable'
+alias salst='sudo apt list --upgradeable'
 alias sagup='sudo apt upgrade'
 alias sagin='sudo apt install'
 
