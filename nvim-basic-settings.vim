@@ -20,12 +20,12 @@ set expandtab
 
 " Should put us in hybrid numbering, meaning in normal mode numbering will be
 " relative, but when in insert mode, numbers will be absolute
-:set number relativenumber
-:augroup numbertoggle
-:  autocmd!
-:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-:augroup END
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 " set it to treat gemini files like markdown files
 au! BufRead,BufNewFile *.gmi set filetype=markdown
@@ -41,9 +41,9 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 set termguicolors       " turn on true colors, since ny term supports that
-" colorscheme cobalt2     " set the colorscheme
+colorscheme cobalt2     " set the colorscheme
 
-"set cursorline          " Should kind of highlight what ever line the cursor is on, to make it easy to find
+set cursorline          " Should kind of highlight what ever line the cursor is on, to make it easy to find
 set colorcolumn=100     " Put a highlighted colume at the 100 space mark.  Just so we can see a really long line, like this one.
 
 set wildmode=longest,list,full
@@ -73,10 +73,10 @@ nnoremap <Leader>H :vertical resize -5<CR>
 nnoremap <Leader>L :vertical resize +5<CR>
 
 " nerdtree file manager
-:nmap <silent> <C-D> :NERDTreeToggle<CR>
+nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 " Should show a list of the buffers that opened
-:nnoremap <F5> :buffers<CR>:buffer<Space>  
+nnoremap <F5> :buffers<CR>:buffer<Space>  
 
 " fzf keybindings. 
 map <C-f> :Files<CR>
@@ -92,3 +92,6 @@ let g:gitgutter_sign_modified_first_line = '🤞'
 let g:gitgutter_sign_removed = '👎'
 let g:gitgutter_sign_removed_first_line = '👎'
 
+" Create a terminal inside of of vim
+nmap <F8> :let $VIM_DIR=expand('%:p:h')<CR>:vsplit +terminal<CR>Acd $VIM_DIR<CR>clear<CR>
+tmap <c-space> <C-\><c-n>
