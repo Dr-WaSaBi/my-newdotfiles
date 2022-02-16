@@ -121,6 +121,9 @@ export PATH="$PATH:$HOME/.local/bin"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+export MYDOTFILES="$HOME/mydev/my-newdotfiles"
+
+
 #Set the oh-my-posh promt
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp.json)"
 
@@ -131,4 +134,5 @@ echo ""
 
 # change to ~ home folder
 cd ~
+
 . "$HOME/.cargo/env"
