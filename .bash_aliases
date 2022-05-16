@@ -47,3 +47,5 @@ alias sagin='sudo apt install'
 
 alias py='python3'
 
+alias bomba='bombadillo'
+
